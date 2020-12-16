@@ -24,9 +24,8 @@ int main() {
 		char c1, c2;
 		cin >> c1 >> c2;
 		for(int j=0; j<n; ++j)
-			if(j+1>=l&&j+1<=r)
-				if(s[j]==c1)
-					s[j]=c2;
+			if(j+1>=l&&j+1<=r&&s[j]==c1)
+				s[j]=c2;
 	}
 	for(int i=0; i<n; ++i)
 		cout << s[i];
